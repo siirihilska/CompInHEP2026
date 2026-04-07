@@ -1,0 +1,23 @@
+/run/initialize
+
+/vis/open OGL
+/vis/viewer/set/autoRefresh true
+/vis/drawVolume
+
+/vis/viewer/set/viewpointThetaPhi 120 170 deg
+
+/vis/viewer/set/style wireframe
+#/vis/viewer/refresh
+
+/vis/viewer/set/auxiliaryEdge true
+
+/gun/particle alpha
+/gun/energy 10 GeV
+
+/vis/scene/add/trajectories smooth
+
+/run/beamOn 1
+
+/vis/ogl/export alpha.eps
+
+
